@@ -20,6 +20,7 @@ class FarmBot:
             if self.alive:
                 if not self.check_app():
                     self.app_start()
+                    sleep(2)
                     self.games_btn.click()
 
                 if self.quiz_btn.click_exists():
@@ -117,6 +118,9 @@ class FarmBot:
         sleep(31)
 
     def start(self):
+        self.d.screen_on()
+        self.d.swipe(500, 1000, 500, 500, 400)
+        sleep(2)
         self.app_start()
 
         self.games_btn.click()
