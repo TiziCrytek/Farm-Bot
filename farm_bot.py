@@ -25,7 +25,7 @@ class FarmBot:
                 if self.quiz_btn.click_exists():
                     sleep(2)
                     # self.quiz()
-                    self.d.app_stop()
+                    self.d.app_stop(self.package)
                     self.d.screen_off()
                     sleep(60*60*3 + random.randint(1, 20))
                     self.d.screen_on()
