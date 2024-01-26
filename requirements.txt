@@ -1,1 +1,2 @@
 uiautomator2==2.16.25
+streamlit==1.30.0
