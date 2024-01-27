@@ -5,7 +5,7 @@ from time import sleep
 class FarmBot:
     def __init__(self, addres):
         self.alive = True
-        self.d = u2.connect(addres)
+        self.d = u2.connect_adb_wifi(addres)
         self.home_btn = self.d(description="Главная")
         self.games_btn = self.d(description="Игры")
         self.bonus_btn = self.d(className='android.widget.Button', index=1, description='Забрать', enabled='true')
