@@ -45,7 +45,7 @@ class FarmBot:
                     self.d.app_stop(self.package)
                     sleep(2)
                     self.d.screen_off()
-                    sleep(30*1 + random.randint(1, 10))
+                    sleep(60*10 + random.randint(1, 10))
                     self.d.screen_on()
                     self.d.swipe(500, 1300, 500, 200, duration=0.1)
 
